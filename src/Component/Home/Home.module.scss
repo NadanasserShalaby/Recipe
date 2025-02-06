@@ -1,0 +1,128 @@
+.container {
+    width: 70%;
+    margin-left: 25%;
+    margin-bottom: 60px;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    transform: translateY(-10px);
+}
+
+.card {
+
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    // width: 95%;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.5s ease;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    // ✅ Small Screens (≥ 576px) - 2 cards per row
+    @media (min-width: 576px) {
+        // flex: 1 1 calc(50% - 20px); // 50% width minus gap
+        width: calc(50% - 20px);
+        margin: auto;
+
+        // margin-left: 25%;
+    }
+
+    // ✅ Medium Screens (≥ 768px) - 3 cards per row
+    @media (min-width: 768px) {
+        // flex: 1 1 calc(33.33% - 20px); // 33.33% width minus gap
+        width: calc(33.33% - 20px);
+        margin: auto;
+        // margin-left: 20%;
+        
+    }
+
+    // ✅ Large Screens (≥ 992px) - 4 cards per row
+    // @media (min-width: 992px) {
+    //     // flex: 1 1 calc(25% - 20px); // 25% width minus gap
+    //     width: calc(25% - 20px);
+    //     // margin-left: 25%;
+    // }
+
+    img {
+        width: 50%;
+
+        border-radius: 50%;
+        transition: all 0.5s;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+
+        img {
+            transform: rotate(360deg);
+            box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+        }
+    }
+    h2 {
+        margin: 0;
+    }
+    p {
+        color: #21BA75;
+        margin-top: 0;
+    }
+    
+    .btn {
+        background-color: #21BA75;
+        color: white;
+        border: #fff;
+        transition: all 0.5s;
+    
+        &:hover {
+            transform: scale(1.1);
+            background-color: #049668;
+        }
+    }
+}
+
+
+
+
+
+.position{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: #049668;
+    z-index: 5;
+}
+
+.loader {
+    margin: 20px 55%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ff8a5f;
+    border-top: 5px solid gray;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.noResults {
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+}

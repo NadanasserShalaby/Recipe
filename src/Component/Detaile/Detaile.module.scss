@@ -1,0 +1,117 @@
+.detailsContainer {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  margin-left: 25%;
+  // margin-bottom: 20%;
+}
+
+.recipeHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipeTitle {
+  font-size: 2.5rem;
+  // color: #ff8a5f;
+  // background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  // background-clip: text;
+  // --webkit-background-clip: text;
+  // --webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.imageSection {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.recipeImage {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.youtube {
+  background-color: #ff4b4b;
+}
+
+.source {
+  background-color: #4caf50;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.instructions, .ingredients {
+  flex: 1 1 300px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructions h2, .ingredients h2 {
+  font-size: 1.8rem;
+  color: #ff7e5f;
+  border-bottom: 2px solid #feb47b;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.ingredients ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredients li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.ingredients li span {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instructions, .ingredients {
+    width: 90%;
+  }
+} 
