@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Nav from '../Nav/Nav'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Sidebar_1 from '../Sidebar_1/Sidebar_1';
 
