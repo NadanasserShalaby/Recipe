@@ -20,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/category/:categoryName" element={<Home />} />
           <Route path="/detaile/:id" element={<Detaile />} />
+          <Route path="*" element={<Layout />} />
         </Routes>
       </Router>
       {/* <Footer /> */}
