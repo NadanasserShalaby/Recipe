@@ -10,7 +10,6 @@ export default function Layout() {
 
     <>
     <Sidebar_1 onSelect={() => {}}  />
-      <Nav onCategorySelect={setSelectedCategory}/>
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-center p-6">
             <h1 className="text-9xl font-extrabold text-gray-800">404</h1>
             <p className="text-xl text-gray-600 mt-2">Oops! The page you're looking for doesn't exist.</p>
@@ -25,7 +24,6 @@ export default function Layout() {
                 Go Back Home
             </Link>
         </div>
-      <Footer />
 
     </>
   )
